@@ -7,7 +7,7 @@ https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset/data?select=tag.
 
 ### activate venv
 1. python -m venv .venv
-2. Windows: myenv\Scripts\activate
+2. Windows: .venv\Scripts\activate
 3. mac: source myenv/bin/activate
 4. pip install -r requirements.txt
 
