@@ -1,5 +1,7 @@
 # Movie Recommendations
 
+## Course website: 
+http://courses.compute.dtu.dk/02807/2024/
 
 ## Link to dataset: 
 https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset/data?select=tag.csv 
