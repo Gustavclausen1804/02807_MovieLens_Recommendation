@@ -1,5 +1,5 @@
 jupyter
 pandas
 requests
-json
-time
+seaborn
+matplotlib
