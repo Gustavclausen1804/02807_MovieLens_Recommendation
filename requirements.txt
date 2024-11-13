@@ -3,4 +3,4 @@ pandas
 requests
 seaborn
 matplotlib
-sklearn
+scikit-learn
