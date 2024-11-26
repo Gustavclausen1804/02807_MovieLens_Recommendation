@@ -6,3 +6,4 @@ matplotlib
 scikit-learn
 mmh3
 sentence_transformers
+faiss-cpu
