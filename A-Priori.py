@@ -233,8 +233,8 @@ resultApriori
 rules = generate_association_rules(resultApriori, min_confidence=0.7)
 rules
 
-rules = generate_association_rules(resultApriori, min_confidence=0.8)
-rules
-
 resultApriori = aprioriFromScratch(movie_baskets, support_threshold=0.008)
 resultApriori
+
+rules = generate_association_rules(resultApriori, min_confidence=0.8)
+rules
