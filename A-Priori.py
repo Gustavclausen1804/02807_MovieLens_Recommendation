@@ -113,7 +113,7 @@ def aprioriFromScratch(baskets_encoded, support_threshold):
 
     # Convert `frozenset` back to `set` in the final DataFrame
     result['ItemSet'] = result['ItemSet'].apply(set)
-
+    print('Number of frequents item is ', result.shape[0])
     return result.reset_index(drop=True)
 
 import pandas as pd
@@ -217,24 +217,41 @@ rules
 
 
 """
-
+print('By running Apriori  with support_threshold=0.025 and association rules with  min_confidence=0.5 we get')
 resultApriori = aprioriFromScratch(movie_baskets, support_threshold=0.025)
 resultApriori
 
 rules = generate_association_rules(resultApriori, min_confidence=0.5)
 rules
 
+print('By running Apriori  with support_threshold=0.025 and association rules with  min_confidence=0.7 we get')
 rules = generate_association_rules(resultApriori, min_confidence=0.7)
 rules
 
 resultApriori = aprioriFromScratch(movie_baskets, support_threshold=0.018)
 resultApriori
-
+print('By running Apriori  with support_threshold=0.018 and association rules with  min_confidence=0.7 we get')
 rules = generate_association_rules(resultApriori, min_confidence=0.7)
+rules
+print('By running Apriori  with support_threshold=0.018 and association rules with  min_confidence=0.8 we get')
+rules = generate_association_rules(resultApriori, min_confidence=0.8)
 rules
 
 resultApriori = aprioriFromScratch(movie_baskets, support_threshold=0.008)
 resultApriori
+print('By running Apriori  with support_threshold=0.008 and association rules with  min_confidence=0.8 we get')
 
 rules = generate_association_rules(resultApriori, min_confidence=0.8)
+rules
+print('By running Apriori  with support_threshold=0.008 and association rules with  min_confidence=0.9 we get')
+
+rules = generate_association_rules(resultApriori, min_confidence=0.9)
+rules
+print('By running Apriori  with support_threshold=0.008 and association rules with  min_confidence=0.95 we get')
+
+rules = generate_association_rules(resultApriori, min_confidence=0.95)
+rules
+print('By running Apriori  with support_threshold=0.008 and association rules with  min_confidence=0.98 we get')
+
+rules = generate_association_rules(resultApriori, min_confidence=0.98)
 rules
