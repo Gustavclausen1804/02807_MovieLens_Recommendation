@@ -8,3 +8,4 @@ mmh3
 sentence_transformers
 faiss-cpu
 time
+wordcloud
